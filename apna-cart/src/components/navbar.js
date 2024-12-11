@@ -3,7 +3,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <>
+    <React.Fragment>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">
           Navbar
@@ -78,7 +78,7 @@ function Navbar() {
           </form>
         </div>
       </nav>
-    </>
+      </React.Fragment>
   );
 }
 

@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
+import Product from "./Product.js";
 
-
-
-function Productlist(props) {
-
-    return ( 
-        console.log(props);
-        <>
-        
-        
-        
-        </>
-     );
+export default function Productlist(props) {
+  return (
+    <div>
+      {" "}
+      {/* Or use React.Fragment if you don't want a wrapping div */}
+      {props.products.map((product, i) => (
+        <Product product={product} key={i} />
+      ))}
+    </div>
+  );
 }
-
-export default Productlist;

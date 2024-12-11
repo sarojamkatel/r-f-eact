@@ -1,49 +1,45 @@
-import Navbar from "../../apna-cart/src/components/Navbar";
-import Productlist from "../../apna-cart/src/components/productList";
 import React from 'react';
-
+import Navbar from './components/navbar';
+import Productlist from './components/productList';
 
 export default function App() {
-
-
-  const products=[
+  const products = [
     {
       price: 9999,
-      name: "iphone",
-      quantity:0
+      name: "iPhone",
+      quantity: 0,
     },
     {
       price: 99999,
-      name: "samsung",
-      quantity:0
+      name: "Samsung",
+      quantity: 0,
     },
     {
       price: 9999,
-      name: "redmi",
-      quantity:0
+      name: "Redmi",
+      quantity: 0,
     },
     {
       price: 999,
-      name: "nokia",
-      quantity:0
+      name: "Nokia",
+      quantity: 0,
     },
     {
       price: 99,
-      name: "oppo",
-      quantity:0
+      name: "Oppo",
+      quantity: 0,
     },
     {
       price: 9,
-      name: "poco",
-      quantity:0
-    }
+      name: "Poco",
+      quantity: 0,
+    },
   ];
+
   return (
-    <>
+    <React.Fragment>
       <Navbar />
       <Productlist products={products} />
-    </>
+    </React.Fragment>
   );
 }
-
-
